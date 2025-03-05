@@ -1,0 +1,35 @@
+<aside class="app-sidebar">
+    <nav>
+        <ul>
+            <li><i class="material-icons">dashboard</i> Dashboard</li>
+            <li class="has-submenu">
+                <a href="#" (click)="toggleSubmenu($event)"><i class="material-icons">build</i> Procesos <i class="material-icons arrow">arrow_drop_down</i></a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="material-icons">sell</i> Venta boletos</a></li>
+                    <li><a href="#"><i class="material-icons">add_road</i> Crear rutas</a></li>
+                    <li><a href="#"><i class="material-icons">local_shipping</i> Encomiendas</a></li>
+                    <li><a href="#"><i class="material-icons">search</i> Consultar encomiendas</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#" (click)="toggleSubmenu($event)"><i class="material-icons">folder</i> Registros <i class="material-icons arrow">arrow_drop_down</i></a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="material-icons">directions_bus</i> Registrar buses</a></li>
+                    <li><a href="#"><i class="material-icons">assignment</i> Asignar buses</a></li>
+                    <li><a href="#"><i class="material-icons">store</i> Registrar terminal</a></li>
+                    <li><a href="#"><i class="material-icons">confirmation_number</i> Registrar serie de boletos</a></li>
+                    <li><a href="#"><i class="material-icons">map</i> Rutas y paradas</a></li>
+                    <li><a href="#"><i class="material-icons">bus_alert</i> Tipos de buses</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#" (click)="toggleSubmenu($event)"><i class="material-icons">security</i> Administrador <i class="material-icons arrow">arrow_drop_down</i></a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="material-icons">manage_accounts</i> Roles y permisos</a></li>
+                    <li><a href="#"><i class="material-icons">person_add</i> Registrar personal</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="material-icons">bar_chart</i> Reportes</a></li>
+        </ul>
+    </nav>
+</aside>

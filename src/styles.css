@@ -21,3 +21,20 @@ html, body {
     width: 100%;
     text-align: center;
 }
+
+/* de mi dashboard*/
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-grow: 1;
+}

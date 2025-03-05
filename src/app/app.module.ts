@@ -17,6 +17,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { AddTokenInterceptor } from './utils/add-token.interceptor';
+import { HeaderComponent } from './components/header/header.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ContentComponent } from './components/content/content.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { AddTokenInterceptor } from './utils/add-token.interceptor';
     SignInComponent,
     DashboardComponent,
     NavbarComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    HeaderComponent,
+    SidebarComponent,
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -45,3 +53,5 @@ import { AddTokenInterceptor } from './utils/add-token.interceptor';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

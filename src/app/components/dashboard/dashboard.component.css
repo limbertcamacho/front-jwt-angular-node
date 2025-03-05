@@ -1,0 +1,20 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-grow: 1; /* Permite que el contenido principal crezca para llenar el espacio disponible */
+  }
+  
+  app-sidebar {
+    width: 200px; /* Ancho de la barra lateral */
+    background-color: #f0f0f0; /* Color de fondo de la barra lateral */
+  }
+  
+  app-content {
+    flex-grow: 1; /* Permite que el contenido principal crezca para llenar el espacio disponible */
+    padding: 20px; /* Espacio interno del contenido principal */
+  }
