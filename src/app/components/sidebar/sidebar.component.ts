@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -16,11 +16,18 @@ export class SidebarComponent implements OnInit {
       parent.classList.toggle('open');
     }
   }
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+  
+  logOut() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/login'])
+  }
 
 }
+
+
 
 

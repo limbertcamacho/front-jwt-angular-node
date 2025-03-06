@@ -1,0 +1,83 @@
+
+.login-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f0f0f0;
+  }
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #363b41;
+  }
+  
+  .logo-container img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 0rem;
+
+    position: relative;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: rgb(221, 221, 221);
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 0.7rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 1rem 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1rem;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #1d425e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agrega una transición suave */
+  }
+  .login-container button:hover {
+    background-color: #022c4c; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  .links {
+    margin-top: 2rem;
+  }
+  
+  .links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+  }
+
+

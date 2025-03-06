@@ -29,12 +29,22 @@
                     <li><a href="#"><i class="material-icons">person_add</i> Registrar personal</a></li>
                 </ul>
             </li>
+
             <li class="has-submenu">
                 <a href="#" (click)="toggleSubmenu($event)"><i class="material-icons">bar_chart</i> Reportes <i class="material-icons arrow">arrow_drop_down</i></a>
             <ul class="submenu">
                 <li><a href="#"><i class="material-icons">picture_as_pdf</i> Roles y permisos</a></li>
                 <li><a href="#"><i class="material-icons">picture_as_pdf</i> Registrar personal</a></li>
             </ul>
+           </li>
+
+           <li class="has-submenu">
+            <a href="#" (click)="toggleSubmenu($event)"><i class="material-icons">person_add</i> Cerrar Sesion <i class="material-icons arrow">arrow_drop_down</i></a>
+            <ul class="submenu">
+            <li><a href="#" (click)="logOut()"><i class="material-icons">login</i>Salir</a></li>
+            </ul>
+           </li>
+
         </ul>
     </nav>
 </aside>

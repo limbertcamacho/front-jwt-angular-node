@@ -1,10 +1,10 @@
-body{
-  background-color: red;
-}
+
+
 .app-sidebar {
     width: 200px; /* Define el ancho del sidebar en 200 píxeles */
     background-color: #f0f0f0; /* Establece un color de fondo gris claro */
     padding: 1rem; /* Agrega un espacio de relleno de 1 rem alrededor del contenido */
+    
   }
   
   .app-sidebar ul {
@@ -15,19 +15,21 @@ body{
   
   .app-sidebar li a {
     display: block; /* Hace que los enlaces se comporten como elementos de bloque */
-    padding: 0.5rem 1rem; /* Agrega relleno vertical y horizontal a los enlaces */
+    padding: 0.2rem 0rem; /* Agrega relleno vertical y horizontal a los enlaces */
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    color: #333333; /* Establece el color del texto a un gris oscuro */
+    color: #333333; /* Establece el color del texto a un gris oscuro */ 
+
   }
   
   .app-sidebar li a:hover {
     background-color: #ddd; /* Cambia el color de fondo al pasar el mouse por encima */
+  
   }
   
   .app-sidebar i {
-    margin-right: 8px; /* Agrega un margen a la derecha de los iconos */
-    font-size: 1.2em; /* Aumenta el tamaño de los iconos */
-    color: #333333; /* Establece el color de los iconos al mismo gris oscuro que el texto */
+    margin-right: 5px;/* Agrega un margen a la derecha de los iconos */
+    font-size: 1.4em; /* Aumenta el tamaño de los iconos */
+    color: #1d425e; /* Establece el color de los iconos al mismo gris oscuro que el texto */
   }
   
   /* Estilos para el manejo de submenús */
@@ -35,19 +37,23 @@ body{
     display: flex; /* Usa flexbox para alinear los elementos dentro del enlace */
     justify-content: space-between; /* Distribuye el espacio entre los elementos dentro del enlace */
     align-items: center; /* Centra verticalmente los elementos dentro del enlace */
+    
   }
   
   .app-sidebar .submenu {
     display: none; /* Oculta los submenús por defecto */
     padding-left: 20px; /* Agrega un relleno a la izquierda para indentar los elementos del submenú */
+    
   }
   
   .app-sidebar .has-submenu.open > .submenu {
     display: block; /* Muestra el submenú cuando el elemento padre tiene la clase 'open' */
+  
   }
   
   .app-sidebar .arrow {
     transition: transform 0.3s ease; /* Agrega una transición suave a la propiedad 'transform' */
+  
   }
   
   .app-sidebar .has-submenu.open > a > .arrow {
