@@ -1,3 +1,6 @@
+body{
+  background-color: red;
+}
 .app-sidebar {
     width: 200px; /* Define el ancho del sidebar en 200 píxeles */
     background-color: #f0f0f0; /* Establece un color de fondo gris claro */
@@ -14,7 +17,7 @@
     display: block; /* Hace que los enlaces se comporten como elementos de bloque */
     padding: 0.5rem 1rem; /* Agrega relleno vertical y horizontal a los enlaces */
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    color: #333; /* Establece el color del texto a un gris oscuro */
+    color: #333333; /* Establece el color del texto a un gris oscuro */
   }
   
   .app-sidebar li a:hover {

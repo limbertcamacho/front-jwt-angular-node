@@ -1,14 +1,106 @@
+
+
+/* desde aca */
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-right: 5px;
+}
 .app-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    background-color: #1d425e;
 }
 
-.app-header nav a {
-    color: white;
-    text-decoration: none;
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0 0.5rem;
+    margin-right: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+}
+
+.notifications, .messages, .user-menu {
+    position: relative;
     margin-left: 1rem;
+    cursor: pointer;
+    color: rgb(221, 221, 221);
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+}
+
+.user-menu .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.user-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    list-style: none;
+    width: 150px;
+}
+
+.user-menu:hover .submenu {
+    display: block;
+}
+
+.user-menu .submenu li a {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333333;
+}
+
+.user-menu .submenu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.user-menu .submenu li a i {
+    margin-right: 0.5rem;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.user-menu:hover .arrow {
+    transform: rotate(180deg);
 }
