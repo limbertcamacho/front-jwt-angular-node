@@ -1,0 +1,77 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Un gris claro de fondo */
+     /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Resetea el margen para asegurar que ocupe toda la ventana */
+    
+}
+
+.body {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(5, 6, 5, 0.1); /* Sutil sombra */
+    padding: 2rem; /* Espacio interno */
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para que no se vea muy grande en pantallas anchas */
+    text-align: center; /* Centrar el contenido */
+    border: 1px solid #ccc;
+}
+
+.logo {
+    height: 80px; /* Altura del logo */
+    margin-bottom: 1.5rem; /* Espacio debajo del logo */
+}
+
+h3 {
+    color: #333; /* Color del texto de los encabezados */
+    margin-bottom: 2rem; /* Más espacio debajo del encabezado */
+}
+
+.form-floating {
+    margin-bottom: 1.5rem; /* Espacio entre los elementos del formulario */
+}
+
+.form-control {
+    border-radius: 0.25rem;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: 0.625rem;
+}
+
+.form-floating > label {
+    opacity: 0.65;
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}
+
+.btn-primary {
+    background-color: #1d425e; /* Azul primario de Bootstrap */
+    border-color: #007bff;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #2d5d81; /* Un azul más oscuro al pasar el mouse */
+    border-color: #1d425e;
+}
+
+a {
+    color: #1d425e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+app-spinner {
+    /* Alinea el spinner en el centro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Opcional: para que el spinner ocupe toda la pantalla mientras carga */
+}

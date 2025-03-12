@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class DashboardComponent implements OnInit {
   listProduct: Product[] = []
-
+  currentView: string = 'dashboard'; // Vista por defecto por yo
   constructor(private _productService: ProductService) { }
 
   ngOnInit(): void {
@@ -22,4 +22,15 @@ export class DashboardComponent implements OnInit {
     })
   }
 
+  // Método para cambiar la vista por yo
+  changeView(view: string) {
+    this.currentView = view;
 }
+
+}
+
+
+
+    
+
+    

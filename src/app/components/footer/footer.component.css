@@ -4,3 +4,37 @@
     text-align: center;
     padding: 1rem;
 }
+/*
+.footer {
+    background-color: #1d425e;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    text-align: center; 
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
+
+.footer-content p {
+    margin: 0;
+}
+*/

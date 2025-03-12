@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
+  @Output() viewChanged = new EventEmitter<string>();
   toggleSubmenu(event: Event) {
     event.preventDefault();
     event.stopPropagation();
@@ -25,6 +25,11 @@ export class SidebarComponent implements OnInit {
     localStorage.removeItem('token');
     this.router.navigate(['/login'])
   }
+
+  // Método para emitir el evento de cambio de vista
+  changeView(view: string) {
+    this.viewChanged.emit(view);
+}
 
 }
 

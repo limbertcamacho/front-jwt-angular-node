@@ -14,13 +14,24 @@ import { ToastrModule } from 'ngx-toastr';
 import { LoginComponent } from './components/login/login.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { AddTokenInterceptor } from './utils/add-token.interceptor';
 import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ContentComponent } from './components/content/content.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { RegistrarBusesComponent } from './components/registrar-buses/registrar-buses.component';
+import { AsignarBusesComponent } from './components/asignar-buses/asignar-buses.component';
+import { RegistrarTerminalComponent } from './components/registrar-terminal/registrar-terminal.component';
+import { RegistrarSerieBoletaComponent } from './components/registrar-serie-boleta/registrar-serie-boleta.component';
+import { RegistrarRutasParadasComponent } from './components/registrar-rutas-paradas/registrar-rutas-paradas.component';
+import { RegistrarTipoBusesComponent } from './components/registrar-tipo-buses/registrar-tipo-buses.component';
+import { VentaBoletosComponent } from './components/venta-boletos/venta-boletos.component';
+import { CrearRutasComponent } from './components/crear-rutas/crear-rutas.component';
+import { EncomiendasComponent } from './components/encomiendas/encomiendas.component';
+import { ConsultarEncomiendasComponent } from './components/consultar-encomiendas/consultar-encomiendas.component';
+import { RolesPermisosComponent } from './components/roles-permisos/roles-permisos.component';
+import { RegistrarPersonalComponent } from './components/registrar-personal/registrar-personal.component';
 
 @NgModule({
   declarations: [
@@ -28,12 +39,23 @@ import { FooterComponent } from './components/footer/footer.component';
     LoginComponent,
     SignInComponent,
     DashboardComponent,
-    NavbarComponent,
     SpinnerComponent,
     HeaderComponent,
     SidebarComponent,
     ContentComponent,
-    FooterComponent
+    FooterComponent,
+    RegistrarBusesComponent,
+    AsignarBusesComponent,
+    RegistrarTerminalComponent,
+    RegistrarSerieBoletaComponent,
+    RegistrarRutasParadasComponent,
+    RegistrarTipoBusesComponent,
+    VentaBoletosComponent,
+    CrearRutasComponent,
+    EncomiendasComponent,
+    ConsultarEncomiendasComponent,
+    RolesPermisosComponent,
+    RegistrarPersonalComponent,
   ],
   imports: [
     BrowserModule,
